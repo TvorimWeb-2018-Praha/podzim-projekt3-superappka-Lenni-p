@@ -1,0 +1,136 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.lista {
+    display: flex;
+}
+
+h1 {
+    font-size: 15px;
+    color: #25133d;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+li {
+    font-size: 15px;
+    display: inline-block;
+    margin: 0;
+}
+
+.lista a{
+    display: block;
+    text-decoration: none;
+    color: #25133d;
+    padding: 10px 25px 10px 25px;
+}
+
+.lista li :hover{
+    background-color: #48418e;
+    color: white;
+}
+
+.obrazovka{
+    background: #48418e url('images/pozadi.jpg') no-repeat;
+    position: relative;
+}
+
+.telefon{
+    position: absolute;
+    right: 0;
+    bottom: -1.5%;
+} 
+
+.texty{
+    padding: 40px;
+}
+
+.tlacitka{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.cudlik a:hover{
+    background-color: #48418e;
+}
+
+.cudlik a{
+    display: block;
+    color: white; 
+    padding: 5px 25px;
+    border: solid white 1px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.nadpis{
+    color: white;
+    font-size: 90px;
+}
+
+.podnadpis{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    width: 350px;
+    padding: 30px 0 50px 0;
+}
+
+.bila{
+    display: flex;
+    justify-content: space-around;
+}
+
+.benefit{
+    text-align: center;
+    padding: 30px;
+}
+
+.benefit_nadpis{
+    color: #48418e;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.benefit_text{
+    font-size: 15px;
+}
+
+.paticka{
+    background-color: #48418e;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+}
